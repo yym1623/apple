@@ -115,7 +115,7 @@ export default {
     background: #F5F5F7;
     width: 100%;
     height: 700px;
-    margin: 44px auto 0;
+    margin: auto;
     .footer {
       max-width: 1000px;
       width: 100%;
