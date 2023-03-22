@@ -183,7 +183,7 @@ export default {
         } 
         .f-b {
           margin-top: 20px;
-          font-size: 23px;
+          font-size: 28px;
           font-weight: bold;
           .b {
             margin-top: 10px;
@@ -358,7 +358,7 @@ export default {
         }
       }
       .g-b {
-        background-image: url('../../public/watch(pc).jpg');
+        background-image: url('/public/watch(pc).jpg');
         .f {
           .f-a-a {
             color: red;
@@ -367,7 +367,7 @@ export default {
         }
       }
       .g-c {
-        background-image: url('../../public/notebook(pc).jpg');
+        background-image: url('/public/notebook(pc).jpg');
         .f {
           .f-a,
           .f-b {
@@ -376,13 +376,13 @@ export default {
         }
       }
       .g-d {
-        background-image: url('../../public/mac_pro(pc).jpg');
+        background-image: url('/public/mac_pro(pc).jpg');
       }
       .g-e {
-        background-image: url('../../public/airpods(pc).jpg');
+        background-image: url('/public/airpods(pc).jpg');
       }
       .g-f {
-        background-image: url('../../public/mac_air(pc).png');
+        background-image: url('/public/mac_air(pc).png');
         .f {
           .f-a,
           .f-b {
@@ -399,6 +399,84 @@ export default {
       .des {
         .d {
           width: 82.5%;
+        }
+      }
+      .i {
+        height: 705px;
+      }
+      .iphone {
+        background-image: url('/public/apple_pay(tablet).jpg');
+        .f {
+          padding-top: 60px;
+          .f-a {
+            font-size: 48px;
+          }
+          .f-b {
+            font-size: 24px;
+          }
+          .f-c {
+            font-size: 19px;
+          }
+        }
+      }
+      .iphone-ug {
+        background-image: url('/public/iphone(tablet).jpg');
+        .f {
+          padding-top: 60px;
+          .f-a {
+            font-size: 48px;
+          }
+          .f-b {
+            font-size: 24px;
+          }
+          .f-c {
+            font-size: 19px;
+          }
+        }
+      }
+      .watch {
+        background-image: url('/public/iphone_many(tablet).jpg');
+        .f {
+          padding-top: 60px;
+          .f-a {
+            font-size: 48px;
+          }
+          .f-b {
+            font-size: 24px;
+          }
+          .f-c {
+            font-size: 19px;
+          }
+        }
+      }
+      .gbox {
+        .g {
+          .f {
+            .f-a {
+              font-size: 32px;
+            }
+            .f-b {
+              font-size: 19px;
+            }
+          }
+        }
+        .g-a {
+
+        }
+        .g-b {
+          background-image: url('/public/watch(tablet).jpg');
+        }
+        .g-c {
+          background-image: url('/public/notebook(tablet).jpg');
+        }
+        .g-d {
+          background-image: url('/public/mac_pro(tablet).jpg');
+        }
+        .g-e {
+          background-image: url('/public/airpods(tablet).jpg');
+        }
+        .g-f {
+          background-image: url('/public/mac_air(tablet).png');
         }
       }
     }
@@ -420,6 +498,84 @@ export default {
         .d {
           width: 87.5%;
           max-width: 405px;
+        }
+      }
+      .i {
+        height: 505px;
+      }
+      .iphone {
+        background-image: url('/public/apple_pay(mobile).jpg');
+        .f {
+          .f-a {
+            font-size: 32px;
+          }
+          .f-b {
+            font-size: 19px;
+          }
+          .f-c {
+            font-size: 17px;
+          }
+        }
+      }
+      .iphone-ug {
+        background-image: url('/public/iphone(mobile).jpg');
+        .f {
+          .f-a {
+            font-size: 32px;
+          }
+          .f-b {
+            font-size: 19px;
+          }
+          .f-c {
+            font-size: 17px;
+          }
+        }
+      }
+      .watch {
+        background-image: url('/public/iphone_many(mobile).jpg');
+        .f {
+          .f-a {
+            font-size: 32px;
+          }
+          .f-b {
+            font-size: 19px;
+          }
+          .f-c {
+            font-size: 17px;
+          }
+        }
+      }
+      .gbox {
+        display: flex;
+        flex-direction: column;
+        .g {
+          height: 540px;
+          .f {
+            .f-a {
+              font-size: 32px;
+            }
+            .f-b {
+              font-size: 19px;
+            }
+          }
+        }
+        .g-a {
+
+        }
+        .g-b {
+          background-image: url('/public/watch(mobile).jpg');
+        }
+        .g-c {
+          background-image: url('/public/notebook(mobile).jpg');
+        }
+        .g-d {
+          background-image: url('/public/mac_pro(mobile).jpg');
+        }
+        .g-e {
+          background-image: url('/public/airpods(mobile).jpg');
+        }
+        .g-f {
+          background-image: url('/public/mac_air(mobile).png');
         }
       }
     }

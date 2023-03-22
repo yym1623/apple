@@ -108,6 +108,7 @@ export default {
 
 <style lang="scss" scoped>
   * {
+    font-family: 'Nanum Gothic', sans-serif;
     box-sizing: border-box;
   }
   .container {
@@ -121,7 +122,7 @@ export default {
       width: 100%;
       height: 100%;
       margin: auto;
-      font-size: 12px;
+      font-size: 11px;
       padding: 0 22px;
       .top {
         position: relative;
@@ -228,6 +229,15 @@ export default {
         }
         .f3 {
           font-size: 11px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .container {
+      .footer {
+        .middle {
+          font-size: 10px;
         }
       }
     }
