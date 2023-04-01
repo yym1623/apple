@@ -143,6 +143,7 @@ export default {
       display: flex;
       flex-wrap: wrap;
       .d {
+        line-height: 1.5;
         padding: 15px 0;
         /* max 하면서 기본 width도 100%로 해야 max이하로갈때 반응형으로 적용된단 -> max이상으로만 안가고 반응형 느낌 */
         /* 태블릿이난 모바일로 줄어들면서 반응형으로 위치 조정하면서 나머지 자잘한건 내려깎는 느낌 ㄱ */
