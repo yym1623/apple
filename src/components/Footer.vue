@@ -23,35 +23,38 @@ export default {
   },
 
   methods: {
-    a_click() {
-      this.b__list__a = !this.b__list__a;
-    },
-    b_click() {
-      this.b__list__b = !this.b__list__b;
-    },
-    c_click() {
-      this.b__list__c = !this.b__list__c;
-    },
-    d_click() {
-      this.b__list__d = !this.b__list__d;
-    },
-    e_click() {
-      this.b__list__e = !this.b__list__e;
-    },
-    f_click() {
-      this.b__list__f = !this.b__list__f;
-    },
-    g_click() {
-      this.b__list__g = !this.b__list__g;
-    },
-    h_click() {
-      this.b__list__h = !this.b__list__h;
-    },
-    i_click() {
-      this.b__list__i = !this.b__list__i;      
-    },
+    footer_click(a) {
+      switch(a) {
+        case "a":
+          this.b__list__a = !this.b__list__a;
+          break;
+        case "b":
+          this.b__list__b = !this.b__list__b;
+          break;
+        case "c":
+          this.b__list__c = !this.b__list__c;
+          break;
+        case "d":
+          this.b__list__d = !this.b__list__d;
+          break;
+        case "e":
+          this.b__list__e = !this.b__list__e;
+          break;
+        case "f":
+          this.b__list__f = !this.b__list__f;
+          break;
+        case "g":  
+          this.b__list__g = !this.b__list__g;
+          break;
+        case "h":
+          this.b__list__h = !this.b__list__h;
+          break;
+        case "i":
+          this.b__list__i = !this.b__list__i;      
+          break;       
+      }
+    } 
   },
-
   mounted() {
   }
 }
@@ -72,7 +75,7 @@ export default {
         <div class="middle">
           <div class="s s1">
             <div class="b">
-              <div class="b__f" @click="a_click()">
+              <div class="b__f" @click="footer_click('a')">
                 <div class="item title">쇼핑 및 알아보기</div>
                 <div class="m__p">+</div>
               </div>
@@ -89,7 +92,7 @@ export default {
               </div>
             </div>
             <div class="b">
-              <div class="b__f"  @click="b_click()">
+              <div class="b__f"  @click="footer_click('b')">
                 <div class="item title p">Apple 지갑</div>
                 <div class="m__p">+</div>
               </div>
@@ -101,7 +104,7 @@ export default {
           </div>
           <div class="s s2">
             <div class="b">
-              <div class="b__f"  @click="c_click()">
+              <div class="b__f"  @click="footer_click('c')">
                 <div class="item title">계정</div>
                 <div class="m__p">+</div>
               </div>
@@ -112,7 +115,7 @@ export default {
               </div>
             </div>
             <div class="b">
-              <div class="b__f"  @click="d_click()">
+              <div class="b__f"  @click="footer_click('d')">
                 <div class="item title p">엔터테인먼트</div>
                 <div class="m__p">+</div>
               </div>
@@ -129,7 +132,7 @@ export default {
           </div>
           <div class="s s3">
             <div class="b">
-              <div class="b__f"  @click="e_click()">
+              <div class="b__f"  @click="footer_click('e')">
                 <div class="item title">Apple Store</div>
                 <div class="m__p">+</div>
               </div>
@@ -149,7 +152,7 @@ export default {
           </div>
           <div class="s s4">
             <div class="b">
-              <div class="b__f"  @click="f_click()">
+              <div class="b__f"  @click="footer_click('f')">
                 <div class="item title">비즈니스</div>
                 <div class="m__p">+</div>
               </div>
@@ -159,7 +162,7 @@ export default {
               </div>
             </div>
             <div class="b">
-              <div class="b__f"  @click="g_click()">
+              <div class="b__f"  @click="footer_click('g')">
                 <div class="item title p">교육</div>
                 <div class="m__p">+</div>
               </div>
@@ -172,7 +175,7 @@ export default {
           </div>
           <div class="s s5">
             <div class="b">
-              <div class="b__f"  @click="h_click()">
+              <div class="b__f"  @click="footer_click('h')">
                 <div class="item title">Apple의 가치관</div>
                 <div class="m__p">+</div>
               </div>
@@ -185,7 +188,7 @@ export default {
               </div>
             </div>
             <div class="b">
-              <div class="b__f"  @click="i_click()">
+              <div class="b__f"  @click="footer_click('i')">
                 <div class="item title p">Apple 정보</div>
                 <div class="m__p">+</div>
               </div>
