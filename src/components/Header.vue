@@ -1,6 +1,14 @@
 <script>
+import Header_inside from './Header_inside.vue';
 export default {
-  
+  components: {
+    Header_inside
+  },
+  data() {
+    return {
+      data: ""
+    }
+  }
 }
 </script>
 
@@ -11,16 +19,16 @@ export default {
       <div class="item apple">
         <img src="../svg/apple.svg" alt="">
       </div>
-      <div class="item">스토어</div>
-      <div class="item">Mac</div>
-      <div class="item">iPad</div>
-      <div class="item">iPhone</div>
-      <div class="item">Watch</div>
-      <div class="item">AirPode</div>
-      <div class="item">TW 및 홈</div>
-      <div class="item">엔터테인먼트</div>
-      <div class="item">액세서리</div>
-      <div class="item">고객지원</div>
+      <div class="item" @mouseover="data='store'">스토어</div>
+      <div class="item" @mouseover="data='mac'">Mac</div>
+      <div class="item" @mouseover="data='ipad'">iPad</div>
+      <div class="item" @mouseover="data='iphone'">iPhone</div>
+      <div class="item" @mouseover="data='watch'">Watch</div>
+      <div class="item" @mouseover="data='airpods'">AirPode</div>
+      <div class="item" @mouseover="data='tw'">TW 및 홈</div>
+      <div class="item" @mouseover="data='enter'">엔터테인먼트</div>
+      <div class="item" @mouseover="data='acc'">액세서리</div>
+      <div class="item" @mouseover="data='service'">고객지원</div>
       <div class="item search">
         <img src="../svg/search.svg" alt="">
       </div>
@@ -45,6 +53,9 @@ export default {
         </div>
       </div>
     </div>
+
+    <!-- inside -->
+    <Header_inside :event="data" />
   </section>
 </template>
 
