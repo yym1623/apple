@@ -14,7 +14,7 @@ export default {
 
 
 <template>
-  <section class="container">
+  <section class="container" :class="{ bg : data }">
     <div class="header">
       <div class="item apple">
         <img src="../svg/apple.svg" alt="">
@@ -55,7 +55,7 @@ export default {
     </div>
 
     <!-- inside -->
-    <Header_inside :event="data" />
+    <Header_inside :event="data" @mouseleave="data=''" />
   </section>
 </template>
 
@@ -133,6 +133,9 @@ export default {
         }
       }
     }
+  }
+  .container.bg {
+    background: rgb(29, 29, 31);
   }
   @media screen and (max-width: 833px) {
     .container {

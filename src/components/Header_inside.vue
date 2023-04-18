@@ -4,10 +4,7 @@ export default {
     event: {
       type: String
     }
-  },
-  updated() {
-    console.log(this.event)
-  },
+  }
 }
 </script>
 
@@ -159,7 +156,7 @@ export default {
       </div>
     </div>
     <!-- 6 - airpode -->
-    <div class="inside" :class="{ airpode : event === 'airpode' }">
+    <div class="inside" :class="{ airpods : event === 'airpods' }">
       <div class="g">
         <div class="gt">AirPode 살펴보기</div>
         <div>AirPode 2세대</div>
@@ -317,10 +314,7 @@ export default {
   }
   .insides.event {
     display: block;
-    .inside.stores {
-      display: block;
-    }
-    .inside.stores {
+    .inside.store {
       display: block;
     }
     .inside.mac {
