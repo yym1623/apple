@@ -6,7 +6,17 @@ export default {
   },
   data() {
     return {
-      data: ""
+      data: "",
+      searchOpen: false,
+      storeOpen: false
+    }
+  },
+  methods: {
+    search() {
+      this.searchOpen = !this.searchOpen;
+    },
+    storr() {
+      this.storeOpen = !this.storeOpen;
     }
   }
 }
@@ -29,7 +39,7 @@ export default {
       <div class="item" @mouseover="data='enter'">엔터테인먼트</div>
       <div class="item" @mouseover="data='acc'">액세서리</div>
       <div class="item" @mouseover="data='service'">고객지원</div>
-      <div class="item search">
+      <div class="item search" @click="search()">
         <img src="../svg/search.svg" alt="">
       </div>
       <div class="item store">
@@ -56,6 +66,15 @@ export default {
 
     <!-- inside -->
     <Header_inside :event="data" @mouseleave="data=''" />
+
+    <!-- search inside -->
+    <div class="searchG" :class="{ searchOpen : searchOpen }">
+      
+    </div>
+    <!-- store inside -->
+    <div class="storeG" :class="{ storeOpen : storeOpen }">
+      
+    </div>
   </section>
 </template>
 
@@ -133,6 +152,30 @@ export default {
         }
       }
     }
+    /* inside group */
+    .searchG,
+    .storeG {
+      display: none;
+      background: rgb(29, 29, 31);
+      padding: 10px 30px 30px; 
+      .searchIn,
+      .storeIn {
+        padding: 30px 0;
+        max-width: 1000px;
+        margin: auto;
+        display: none;
+        .group {
+          display: flex;
+        }
+      }
+    }
+    .searchG.searchOpen {
+      display: block;
+    }
+    .stpreG.storeOpen {
+
+    }
+
   }
   .container.bg {
     background: rgb(29, 29, 31);
